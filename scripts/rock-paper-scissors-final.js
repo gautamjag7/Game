@@ -15,10 +15,14 @@ function autoPlay()
       const player=pickComp();
       playGame(player);
     }, 1000);
+    document.querySelector('.js-auto-play-button').innerText='Stop Auto Play';
+    document.querySelector('.js-auto-play-button').classList.add('autoplay-css');
     isAutoPlaying=true;
   }
   else{
     clearInterval(intervalId);
+    document.querySelector('.js-auto-play-button').innerText='Auto Play'
+    document.querySelector('.js-auto-play-button').classList.remove('autoplay-css');
     isAutoPlaying=false;
   }
 };
