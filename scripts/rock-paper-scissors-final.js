@@ -25,6 +25,8 @@ function autoPlay() {
   }
 };
 
+
+
 document.querySelector('.js-rock-button').addEventListener('click', () => {
   playGame('rock');
 });
@@ -46,6 +48,8 @@ document.body.addEventListener('keydown', (event) => {
     playGame('scissors');
   }
 });
+
+updateScore();
 
 function playGame(playerMove) {
   const compMove = pickComp();
