@@ -25,7 +25,7 @@ body{
   border-radius: 75px;
   margin-left:40px;
   margin-right:40px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 .result{
   font-size: 50px;
